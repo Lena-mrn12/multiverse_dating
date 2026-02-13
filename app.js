@@ -1,5 +1,3 @@
-// Ricky et Morty Tinder - script très simple
-// Liste de persos (exemple)
 const persos = [
   { nom: "Rick", img: "https://rickandmortyapi.com/api/character/avatar/1.jpeg" },
   { nom: "Morty", img: "https://rickandmortyapi.com/api/character/avatar/2.jpeg" },
@@ -54,9 +52,9 @@ function swipe(direct) {
       crushs.push(persos[index]);
       afficherCrushs();
     }
-    // pas d'alerte
+   
   } else {
-    // pas d'alerte
+    
   }
   index++;
   if (index >= persos.length) index = 0;
@@ -77,11 +75,10 @@ document.addEventListener("DOMContentLoaded", function() {
     if (endX - startX > 50) swipe("droite");
     else if (startX - endX > 50) swipe("gauche");
   });
-  // Pour PC : clic sur boutons
   document.getElementById("like").onclick = () => swipe("droite");
   document.getElementById("dislike").onclick = () => swipe("gauche");
-  // Bouton refresh
   document.getElementById("refresh-btn").onclick = function() {
     location.reload();
   };
 });
+
