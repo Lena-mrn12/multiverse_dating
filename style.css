@@ -1,5 +1,4 @@
 #container {
-	/* ...existing code... */
 	position: relative;
 }
 #refresh-btn {
@@ -162,3 +161,4 @@ body {
 	display: block;
 	margin: 0 auto 5px auto;
 }
+
