@@ -47,7 +47,6 @@ function afficherCrushs() {
 
 function swipe(direct) {
   if (direct === "droite") {
-    // Ajoute à la liste des crushs si pas déjà dedans
     if (!crushs.find(c => c.nom === persos[index].nom)) {
       crushs.push(persos[index]);
       afficherCrushs();
@@ -81,4 +80,5 @@ document.addEventListener("DOMContentLoaded", function() {
     location.reload();
   };
 });
+
 
